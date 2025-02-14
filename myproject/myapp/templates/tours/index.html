@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>asia tours</title>
+</head>
+<body>
+    <h1>asia tour schedule for june</h1>
+    <ul>
+        {% for tour in tours %} <!- tours 是 views.py context的key->
+        <li>{{tour}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
