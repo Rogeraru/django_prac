@@ -9,5 +9,6 @@ class Tour(models.Model): #一個類別一個表格
     price = models.IntegerField()
 
     #the string representation for the tour
+    #紀錄物件的字串
     def __str__(self):
         return (f"ID:{self.id}: From:{self.origin_country} To:{self.destination_country}, {self.number_of_nights} nights costs ${self.price}")
