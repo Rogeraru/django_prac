@@ -8,3 +8,6 @@ def index(request):
         'tours':tours
     }
     return render(request, 'tours/index.html',context) #view要丟給template
+
+def index2(request):
+    return render(request, 'tours/index2.html')

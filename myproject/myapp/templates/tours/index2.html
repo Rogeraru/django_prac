@@ -1,0 +1,16 @@
+{% load static %} <!--load all static in the project-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>django is awesome</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
+<body>
+    <h1>welcome django</h1>
+    <p>django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.</p>
+    <script src="{% static 'js/scripts.js' %}"></script>
+    <img src="{% static 'images/logo.png' %}" alt="logo">
+</body>
+</html>
